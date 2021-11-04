@@ -12,4 +12,9 @@ $app->get('/', function (Request $request, Response $response, $args) {
     return $response;
 });
 
+$app->get('/otra', function (Request $request, Response $response, $args) {
+    $response->getBody()->write("Hello world otra!");
+    return $response;
+});
+
 $app->run();
