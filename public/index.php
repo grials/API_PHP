@@ -13,7 +13,7 @@ $app->get('/', function (Request $request, Response $response, $args) {
 });
 
 $app->get('/otra', function (Request $request, Response $response, $args) {
-    $response->getBody()->write("Hello world otra!");
+    $response->getBody()->write("otra pagina!");
     return $response;
 });
 
